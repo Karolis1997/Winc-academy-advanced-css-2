@@ -1,0 +1,73 @@
+@mixin position_r {
+    position: relative;
+}
+@mixin position_a {
+    position: absolute;
+    
+}
+$colour:white;
+
+.testimonial-card{
+    grid-area: t;
+    margin-right: 15px;
+    min-height: 420px;
+    width: 370px;
+    background-color: $colour;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.3);
+    display: flex;
+    flex-flow: column;
+    justify-content:space-between;
+   
+  }
+  .text{
+    @include position_r();
+    padding: 2.2em;
+    line-height: 1.7em;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .foto{
+    @include position_a();
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid $colour;
+    background:no-repeat center/cover url(./styles/Afbeeldingen/Winc\ logo.jpg);
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display:flex;
+    justify-content:center;
+    
+  }
+  
+  .footer{
+    @include position_r();
+    background:#686de0;
+    height: 140px;
+    border-radius: 0 0 10px 10px;
+
+    
+  }
+  
+  
+  .winc{
+    @include position_a();
+    color:$colour;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size:1.3rem;
+    font-weight: 600;
+  }
+
+  .exampleWebsite {
+    @include position_a();
+    color:rgb(194, 188, 188);
+    top: 66%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-size:1.1rem;
+    font-weight: 500;
+  }

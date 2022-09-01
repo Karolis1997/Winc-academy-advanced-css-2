@@ -1,0 +1,90 @@
+@mixin display {
+display: flex;
+justify-content: center;
+width: max-content;
+    
+}
+
+.portfolio {
+@include display();
+grid-area: a;          
+}
+.portfolio1 {
+@include display();
+grid-area:b ;
+}
+.portfolio2 {
+@include display();
+grid-area: c; 
+}
+.portfolio3 {
+@include display();
+grid-area: g;
+}
+.portfolio4 {
+@include display();
+grid-area: h;
+}
+.portfolio5 {
+@include display();
+grid-area: j;  
+}
+
+.portfolio:hover .image{
+    opacity: 0.3; 
+}
+
+.portfolio:hover .button{
+opacity: 1;
+}
+.portfolio1:hover .image{
+opacity: 0.3;
+}
+.portfolio1:hover .button{
+opacity: 1;
+}
+.portfolio2:hover .image{
+opacity: 0.3;
+}
+.portfolio2:hover .button{
+opacity: 1;
+}
+.portfolio3:hover .image{
+opacity: 0.3;
+}
+.portfolio3:hover .button{
+opacity: 1;
+}
+.portfolio4:hover .image{
+opacity: 0.3;
+}
+.portfolio4:hover .button{
+opacity: 1;
+}
+.portfolio5:hover .image{
+opacity: 0.3;
+}
+.portfolio5:hover .button{
+opacity: 1;
+}
+
+.image {
+  opacity: 1;
+  display: flex;
+  position:relative;
+  justify-items: center;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 20px;}
+
+  button {
+  position:absolute;
+  margin-top: 75px ;
+  margin-left: 45px;
+  transition: .5s ease;
+  opacity: 0;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}

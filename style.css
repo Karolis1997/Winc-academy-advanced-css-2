@@ -1,0 +1,367 @@
+.assignment {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  justify-items: center;
+  grid-gap: 25px;
+  grid-template-columns: 9, 1fr;
+  grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+  grid-template-areas: "q y . . . . . . ." ". . . t t t . . ." ". . . . . . . . ." ". d . . . . . . ." ". e . a b c . . ." ". f . g h j . . ." ". k . . . . . . ." ". l . . . . . . ." ". m . . . . . . .";
+}
+
+.testimonial-card {
+  grid-area: t;
+  margin-right: 15px;
+  min-height: 420px;
+  width: 370px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+
+.text {
+  position: relative;
+  padding: 2.2em;
+  line-height: 1.7em;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.foto {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: no-repeat center/cover url(./styles/Afbeeldingen/Winc\ logo.jpg);
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  position: relative;
+  background: #686de0;
+  height: 140px;
+  border-radius: 0 0 10px 10px;
+}
+
+.winc {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.exampleWebsite {
+  position: absolute;
+  color: rgb(194, 188, 188);
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.links {
+  grid-area: q;
+  display: flex;
+  flex-direction: column;
+  margin-left: -110px;
+  width: 70px;
+  transition: all 0.3s linear;
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+.links li {
+  height: 60px;
+  position: relative;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links li a {
+  color: white;
+  display: block;
+  height: 100%;
+  width: 180%;
+  line-height: 60PX;
+  padding-left: 25%;
+  border-bottom: 1pX solid rgba(0, 0, 0, 0.4);
+  transition: all 0.3s linear;
+}
+
+.links li:nth-child(1) a {
+  background: #4267B2;
+  background-image: url(./styles/Afbeeldingen/733547.png);
+  background-repeat: no-repeat;
+  background-size: 60px;
+}
+
+.links li:nth-child(2) a {
+  background: #1DA1F2;
+  background-image: url(./styles/Afbeeldingen/4494477.png);
+  background-repeat: no-repeat;
+  background-size: 60px;
+}
+
+.links li:nth-child(3) a {
+  background: #E1306C;
+  background-image: url(./styles/Afbeeldingen/2111463.png);
+  background-repeat: no-repeat;
+  background-size: 60px;
+}
+
+.links li:nth-child(4) a {
+  background: #2867B2;
+  background-image: url(./styles/Afbeeldingen/3536505.png);
+  background-repeat: no-repeat;
+  background-size: 60px;
+}
+
+.links li:nth-child(5) a {
+  background: #333;
+  background-image: url(./styles/Afbeeldingen/3291695.png);
+  background-repeat: no-repeat;
+  background-size: 60px;
+}
+
+.links li:nth-child(6) a {
+  background: #ff0000;
+  background-image: url(./styles/Afbeeldingen/3938026.png);
+  background-repeat: no-repeat;
+  background-size: 60px;
+}
+
+.links li a i {
+  position: absolute;
+  top: 17px;
+  left: 20px;
+  font-size: 27px;
+}
+
+.links ul li a span {
+  display: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.links ul li a:hover {
+  z-index: 1;
+  width: 200px;
+}
+
+.links ul li:hover a span {
+  padding-left: 30%;
+  display: block;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  grid-area: a;
+}
+
+.portfolio1 {
+  display: flex;
+  justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  grid-area: b;
+}
+
+.portfolio2 {
+  display: flex;
+  justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  grid-area: c;
+}
+
+.portfolio3 {
+  display: flex;
+  justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  grid-area: g;
+}
+
+.portfolio4 {
+  display: flex;
+  justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  grid-area: h;
+}
+
+.portfolio5 {
+  display: flex;
+  justify-content: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  grid-area: j;
+}
+
+.portfolio:hover .image {
+  opacity: 0.3;
+}
+
+.portfolio:hover .button {
+  opacity: 1;
+}
+
+.portfolio1:hover .image {
+  opacity: 0.3;
+}
+
+.portfolio1:hover .button {
+  opacity: 1;
+}
+
+.portfolio2:hover .image {
+  opacity: 0.3;
+}
+
+.portfolio2:hover .button {
+  opacity: 1;
+}
+
+.portfolio3:hover .image {
+  opacity: 0.3;
+}
+
+.portfolio3:hover .button {
+  opacity: 1;
+}
+
+.portfolio4:hover .image {
+  opacity: 0.3;
+}
+
+.portfolio4:hover .button {
+  opacity: 1;
+}
+
+.portfolio5:hover .image {
+  opacity: 0.3;
+}
+
+.portfolio5:hover .button {
+  opacity: 1;
+}
+
+.image {
+  opacity: 1;
+  display: flex;
+  position: relative;
+  justify-items: center;
+  height: auto;
+  transition: 0.5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+button {
+  position: absolute;
+  margin-top: 75px;
+  margin-left: 45px;
+  transition: 0.5s ease;
+  opacity: 0;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+body {
+  background-image: url("./styles/Afbeeldingen/Afbeelding.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .testimonial-card {
+    grid-area: y;
+    width: 300px;
+    margin-left: 40px;
+  }
+  .foto {
+    width: 40%;
+    height: 80%;
+  }
+  .portfolio {
+    grid-area: d;
+  }
+  .portfolio1 {
+    grid-area: e;
+  }
+  .portfolio2 {
+    grid-area: f;
+  }
+  .portfolio3 {
+    grid-area: k;
+  }
+  .portfolio4 {
+    grid-area: l;
+  }
+  .portfolio5 {
+    grid-area: m;
+  }
+  .image {
+    width: 300px;
+    margin-left: 50px;
+  }
+  .links {
+    margin-left: -40px;
+  }
+  .button {
+    margin-left: 97px;
+  }
+  body {
+    background-size: cover;
+    background-repeat: inherit;
+  }
+}
+@media (min-width: 768px) and (max-width: 1500px) {
+  .testimonial-card {
+    margin-left: 70px;
+  }
+  .image {
+    width: 250px;
+    margin-left: 50px;
+  }
+  .links {
+    margin-left: -60px;
+  }
+  .button {
+    margin-left: 97px;
+  }
+  body {
+    background-size: cover;
+    background-repeat: inherit;
+  }
+}/*# sourceMappingURL=style.css.map */
